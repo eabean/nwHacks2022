@@ -9,20 +9,38 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  a:hover {
-    color: #125699;
+.toolbar {
+    color: #252a2e;
   }
+
+	.mat-grid-list {
+		background: rgb(26, 102, 128);
+
+	}
+
+	.mat-grid-tile {
+		background: lightblue;
+	}
+
+	.tasks {
+		flex: auto;
+	}
+	
 
 </style>
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-	<h1>fdsfds</h1>
-	<mat-grid-list cols="5" rowHeight="2:1">
-		<mat-grid-tile>1</mat-grid-tile>
-		<mat-grid-tile>2</mat-grid-tile>
-		<mat-grid-tile>3</mat-grid-tile>
-		<mat-grid-tile>4</mat-grid-tile>
-	</mat-grid-list>
+	<p>
+		<mat-toolbar color="primary">
+			<span>Calendar App</span>
+			<span class="example-spacer"></span>
+		</mat-toolbar>
+	</p>
+	<div id="app-container" layout="row" >
+		<div id="task-container"></div>
+		<div id="calendar-container"></div>
+	</div>
 </div>
+	
 <router-outlet></router-outlet>
