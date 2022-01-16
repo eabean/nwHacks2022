@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CalendarBaseComponent } from './calendar-base/calendar-base.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CalendarBaseComponent,
   ],
   imports: [
     BrowserModule,
